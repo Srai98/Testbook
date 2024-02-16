@@ -1,12 +1,221 @@
-<!-- festive culture magzine front page -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>festive Culture Magzine</title>
+    <title>India Festival In Anime</title>
+    <style>
+       .column {
+  width: 100%;
+  height: 855px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: white;
+        }
+        ::-webkit-scrollbar{
+            background-color: rgb(220,126,77);
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgb(220,126,77);
+        }
+        .magazine {
+            height: 90%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 3px 8px 15px 0 rgba(0, 0, 0, .225);
+        }
+        .magazine-note {
+            top: -40px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 50px;
+            position: absolute;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+            z-index: 10;
+        }
+        .magazine-content h1{
+            top: 0;
+            margin: 0;
+            width: 88%;
+            display: flex;
+            justify-content: space-between;
+            transform: scale(1,1.5);
+            color: white;
+        }
+        .magazine img {
+            height: 100%;
+        }
+        .magazine-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+        .magazine-bottom{
+            text-align: left;
+            position: flex;
+            position: absolute;
+            align-items: left;
+            padding: 20px;
+            left: -13px;
+            padding-block: 230px;
+       
+
+        } 
+        .magazine-bottom h2{
+            color: yellow;
+            text-align: left;
+            font-size: 28px;            
+        }
+        .magazine-left{
+            color: white;
+            position: flex;
+            position: absolute;
+            align-items: left;
+            margin: 0;
+            line-height: 12px;
+            margin-top: 0;
+        }
+        .magazine-left h3 {
+            margin: 10px;
+            margin-left: 1px;
+            font-style: initial;
+            align-items: left;
+            text-align: left;
+            font-size: 24px;
+            color: rgb(224,72,43);
+
+        }        
+        .magazine-left .line{
+            margin: 6px;
+            color:rgb(255,208,154);
+        }
+        .magazine-left .left-inner .line{
+            margin: 6px;
+            color:rgb(255,208,154);
+        }
+        .magazine-left .left-inner h5{
+            margin: 6px;
+            color:lightgreen;
+        }
+        .magazine-right {
+            top: 0;
+            width: 120%;
+            text-align: right;
+            position: absolute;
+            align-items: right;
+            padding: 20px;
+            right: -65px;
+            padding-block: 100px;
+        }
+        .magazine-right h3{
+            color: rgb(75, 153, 179);
+            text-align: right;
+            font-size: 28px;
+            
+        }
+        .magazine-right .right-line{
+            font: bold;
+            margin: 0;
+            font-size: 18px;
+        }
+        .magazine-right .right-line-h4{
+            color: white;
+            margin: 0;
+            font-size: 20px;
+        }
+        .magazine-right .right-line ,h5{
+            color: lightgreen;
+            margin: 0;
+            font-size: 18px;
+        }
+        .right-inner {
+            margin: 0px;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-block: 260px;
+        }
+        .right-inner h2{
+            margin: 0;
+            /* color: rgb(199,83,2); */
+            color: rgb(29, 240, 57);
+            font-size: 29px;
+        }
+        .right-inner h3{
+            margin: 0;
+            font-size: 20px;
+            color: aqua;
+        }
+        .right-inner h4{
+            margin: 0;
+            font-size: 18px;
+            color: bisque;
+        }
+        footer{
+            color: aqua;
+            margin-left: 0;
+            font-size: 20px;
+            width: 90%;
+            text-align: left;
+            padding: 700px;
+
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="column">
+        <div class="magazine">
+          <div class="magazine-note">Culture Festival In Anime </div>
+          <div class="magazine-content">
+            <h1><span>A</span><span>N</span><span>I</span><span>M</span><span>E</span></h1>
+            <!-- <img class="text-overlay" src="https://i.imgur.com/jj5cgBo.png" alt=""> -->
+            <div class="magazine-bottom">
+                <h2>Manga-Inspired Styles</h2>
+                <div class="magazine-left">
+                    <h3 >Fantasy Fashion:</h3>
+                    <h4 class="line">Comic Book Couture</h4>
+                    <h4 class="line">Illustrated Elegance</h4>
+                    <h4 class="line">Artistic Attire</h4>
+                    <div class="left-inner">
+                        <h3>Cultural Fusion:</h3>
+                        <h4 class="line">Anime Ethnic Elegance</h4>
+                        <h5>Fusion of East and West</h5>
+                        <h5>Mythical Maiden Styles</h5>
+                        <h4 class="line">Cosplay Catwalk</h4>   
+                    </div>               
+                </div>
+                <div class="magazine-right">
+                    <h3 class="right-line-h3">Anime Fashion Fest:</h3>
+                    <h5 class="right-line">Character Transformations</h5>
+                    <h4 class="right-line-h4">Indian Style</h4>
+                    <h5 class="right-line">kawaii culture</h5>
+                    <div class="right-inner">
+                         <h2>Event Highlights:</h2>
+                         <h4>Designer Anime Collaborations</h4>
+                         <h3>Otaku In Indian Trends</h3>
+                         <h4>Cosplay Glamorous</h4>
+                    </div>   
+                </div>
+            </div>
+            <footer>&#9400 Developed by Shubham</footer>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2023/08/20/08/16/ai-generated-8201916_640.png" alt="">
+      </div>
+    </div>
 </body>
 </html>
