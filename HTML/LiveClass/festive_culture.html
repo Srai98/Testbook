@@ -93,7 +93,7 @@
             margin: 6px;
             color:rgb(255,208,154);
         }
-        .magazine-left .left-inner .line{
+        .magazine-left .left-inner h4{
             margin: 6px;
             color:rgb(255,208,154);
         }
@@ -166,6 +166,43 @@
         ::-webkit-scrollbar-thumb{
             background-color: rgb(220,126,77);
         }
+                /* Selection */
+        ::selection {
+            color: black;
+            background: yellow;
+        }
+        img::selection {
+            color: white;
+            background: #ff3fb4;
+        }
+        .magazine-note::selection {
+            color: white;
+            background: #ff3fb4;
+        }
+        span::selection {
+            color:  white;
+            background:  #ff3fb4;
+        }
+         h1::selection {
+            color:  white;
+            background: #ff3fb4;
+        }
+        h2::selection {
+            color:  white;
+            background:#ff441a;
+        }
+        h3::selection {
+            color:  white;
+            background:#ff441a;
+        }
+        .magazine-bottom::selection{
+            color: white;
+            background:  #ff3fb4;
+        }
+        .magazine-left ::selection{
+            color: white;
+            background-color: #ff3fb4;
+        }        
         footer{
             color: aqua;
             margin-left: 0;
@@ -182,8 +219,8 @@
         <div class="magazine">
           <div class="magazine-note">Culture Festival In Anime HomeWork </div>
           <div class="magazine-content">
-            <h1><span>A</span><span>N</span><span>I</span><span>M</span><span>E</span></h1>
-            <!-- <img class="text-overlay" src="https://i.imgur.com/jj5cgBo.png" alt=""> -->
+            <h1><span>A</span><span>N</span><span>I</span><span>M</span><span>E</span>
+            </h1>
             <div class="magazine-bottom">
                 <h2>Manga-Inspired Styles</h2>
                 <div class="magazine-left">
@@ -193,10 +230,10 @@
                     <h4 class="line">Artistic Attire</h4>
                     <div class="left-inner">
                         <h3>Cultural Fusion:</h3>
-                        <h4 class="line">Anime Ethnic Elegance</h4>
+                        <h4 >Anime Ethnic Elegance</h4>
                         <h5>Fusion of East and West</h5>
                         <h5>Mythical Maiden Styles</h5>
-                        <h4 class="line">Cosplay Catwalk</h4>   
+                        <h4 >Cosplay Catwalk</h4>   
                     </div>               
                 </div>
                 <div class="magazine-right">
