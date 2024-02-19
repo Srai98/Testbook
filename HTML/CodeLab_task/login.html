@@ -22,17 +22,16 @@
             color: #fff;
             justify-content: flex-end; /* Align items on the right side */
         }
-
-    .hdr_page h3 {
-        margin: 0;
-        margin-left: 5px;        
-        margin-right: 30px;
-        padding: 10px;
-        color: #fff;
-        text-align: right;
-        align-items: right;
-        position: flex;
-    }
+         .hdr_page h3 {
+            margin: 0;
+            margin-left: 5px;        
+            margin-right: 30px;
+            padding: 10px;
+            color: #fff;
+            text-align: right;
+            align-items: right;
+            position: flex;
+        }
         .center_page {
             text-align: center;
             margin: 100px;
@@ -43,7 +42,6 @@
             /* background-image:url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500) ; */
             border-radius: 10px;
         }
-
         .center_page input {
             margin: 10px;
             padding: 5px;
@@ -81,7 +79,9 @@
             text-align: left;
             display: flex;
             color: white;
-        
+        }
+        .kp-login input{
+            cursor: pointer;
         }
         .creat-acc{
             margin: 0;
@@ -90,6 +90,9 @@
             display: flex;
             padding: 10px;
             color: #fff;
+        }
+        .creat-acc input{
+            cursor: pointer;
         }
         .creat-acc h4{
             top: 0;
@@ -137,12 +140,12 @@
             <button class="btn-clr">Get Started</button>
        </div>
        <div class="kp-login">
-        <h4>Keep Logged In</h4>
-        <h4>Forgot Password?</h4>
+        <h4><input type="button" value="Keep Logged In"></h4>
+        <h4><input type="button" value="Forgot Password?"></h4>
        </div>
        <div class="creat-acc">
-        <h4>Create Account</h4>
-        <h4>Need Help?</h4>
+        <h4><input type="button" value="Create Account"></h4>
+        <h4><input type="button" value="Need Help?"></h4>
        </div>
     </div>
     <footer class="end_ftr">
