@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 .header-menu-bar{
-    background-color: #cddee7;
+    background-color:rgb(209, 65, 65);
     color: white;
     padding: 10px;
     display: absolute;
@@ -16,7 +16,7 @@ body {
     top: 0;
 }
 .header-main {
-    background-color: rgb(218, 223, 208);
+    background-color: rgb(255,255,255);
     color: white;
     padding: 10px;
     display: flex;
@@ -34,9 +34,10 @@ body {
     display: flex;
     align-items: left;
 }
+
+/* serach box and its boader with img inside search box */
 .left-header-search {
-    display: flex;
-    color: white;
+    display: flex
 }
 .search-bar{
     display: flex;
@@ -44,7 +45,11 @@ body {
     width: 200px;
     margin-top: 10px;
     margin-left: 12px;
+    background-color:  rgb(220,230,240);
+    border-style: hidden;
 }
+
+/* navigation section of header details  */
 .nav-md-right-side {
     display: flex;
     align-items: center;
@@ -60,23 +65,55 @@ body {
 }
 .section-devision li{
     font-size: 15px;
-    margin-right: 20px; /* Adjust the margin as needed */
+    margin-right: 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center; 
 }
+
+/* removing underline and its color for highperlink */
+.section-devision a {
+    text-decoration: none;
+    color: #333; 
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+}
+/* icon button and its below name adjustment in this */
+.no-notify-up{
+    top: 0;
+    width: 15px;
+    height: 18px;
+    text-align: right;
+    position: absolute;
+    align-items: right;
+    padding: 20px;
+    right: 427px;
+    padding-block: 18px;
+} 
+.no-message-up{
+    top: 0;
+    width: 15px;
+    height: 18px;
+    text-align: right;
+    position: absolute;
+    align-items: right;
+    padding: 20px;
+    right: 518px;
+    padding-block: 18px;
+} 
 .nav-home-center-icon{
     padding-top: 45px;
     margin: -45px;
 }
 .nav-my-netwrok-center-icon{
     padding-top: 45px;
-    margin: -55px;
+    margin: -59px;
 }
 .nav-job-center-icon{
     padding-top: 45px;
-    margin: -52px;
+    margin: -58px;
 }
 .nav-mesg-center-icon{
     padding-top: 45px;
@@ -90,18 +127,13 @@ body {
     padding-top: 45px;
     margin: -45px;
 }
-.section-devision a {
-    text-decoration: none;
-    color: #333; /* Adjust color as needed */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .section-devision span {
-    margin-top: 45px; /* Adjust as needed */
+    margin-top: 42px; 
 }
 .nav-try-prim {
     display: flex;
     align-items: right;
-    margin-right: 70px; /* Adjust the margin as needed */
+    margin-right: 50px; /* Adjust the margin as needed */
+    border-left: 100px;
 }
