@@ -1,0 +1,99 @@
+<!-- Problem Statement Creating a Static LinkedIn Page with the following requirements:
+●The LinkedIn page header should have elements such as
+○Linked In Logo
+○Search box
+○Home icon
+○My Network icon
+○Jobs icon
+○Messaging icon
+○Notification icon
+○Account details dropdown icon
+●The page should have 3 panels
+○Left panel
+○Right panel
+○Middle panel
+●The left panel should have Personal information.
+●The middle panel should have a news feed and have an additional post section.
+●The right panel should have Linked In News. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Home Page Static</title>
+    <link rel="stylesheet" href="design.css">  <!-- Linking external CSS file -->
+</head>
+<body>
+    <header class="header-menu-bar">
+        <!-- header section of top menu toolbar -->
+        <div class="header-main">
+            <div class="nav-img">
+                <img src="./img-folder/header-icon-folder/linkedin logo_icon.png" alt="" title="LinkedIn Image" >
+                <div class="left-header-search"> <!-- menu section for button after a search and icon bar in navigation header -->
+                        search bar
+                </div>
+            </div>
+            
+            
+            <!-- button navigation start from home after search box menu -->
+            <nav class="nav-md-right-side">
+                <ul class="section-devision">
+                    
+                    <li class="nav-home">   <!-- Home Page Icon Details -->
+                        <a href="">
+                            <div><img src="./img-folder/header-icon-folder/home.png" alt="" title="Home Screen" height="30px"></div>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-my-network">  <!-- My Network Connection Details -->
+                        <a href="">
+                            <div>
+                                <img src="./img-folder/header-icon-folder/my-network_icon.png" alt="" title="My Network Icon" >
+                            </div>
+                            <span>My Network</span>
+                        </a>
+                    </li>                    
+                    <li class="nav-job"> <!-- Job Search Icon Details -->
+                        <a href="">
+                            <div>
+                                <img src="./img-folder/header-icon-folder/job-search_icon.png" alt="" title="My Job Icon">
+                            </div>
+                            <span>Jobs</span>
+                        </a>
+                    </li>
+                    <li class="nav-mesg">  <!-- Message Chat Details -->
+                        <a href="">
+                            <div>
+                                <img src="./img-folder/header-icon-folder/message_icon.png" alt="" title="Message Icon" height="35px">
+                            </div>
+                            <span>Messaging</span>
+                        </a>
+                    </li>
+                    <li class="nav-natify">  <!--  Notification Message PopUp Details -->
+                        <a href="">
+                            <div>
+                                <img src="./img-folder/header-icon-folder/notification_icon.png" alt="" title="Notification Icon" height="40px">
+                            </div>
+                            <span>Notification</span>
+                        </a>
+                    </li>
+                    <li class="nav-me-selection">   <!-- My selection Login Details -->
+                        <a href="">
+                            <div>   
+                            <img src="./img-folder/header-icon-folder/account_person_icon.png" alt="" title="Me selection login" height="35px">
+                        </div>
+                        <span>Me</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- header section of premium and free option menu -->
+                <div class="nav-try-prim">
+                    <a href="#">Try Premium for ₹0</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
