@@ -1,123 +1,64 @@
-<!-- Problem Statement Creating a Static LinkedIn Page with the following requirements:
-●The LinkedIn page header should have elements such as
-○Linked In Logo
-○Search box
-○Home icon
-○My Network icon
-○Jobs icon
-○Messaging icon
-○Notification icon
-○Account details dropdown icon
-●The page should have 3 panels
-○Left panel
-○Right panel
-○Middle panel
-●The left panel should have Personal information.
-●The middle panel should have a news feed and have an additional post section.
-●The right panel should have Linked In News. -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinkedIn Home Page Static</title>
-    <link rel="stylesheet" href="design.css">  <!-- Linking external CSS file -->
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="./design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header-menu-bar">
-
-        <!-- header section of top menu toolbar -->
-        <div class="header-main">
-            <div class="nav-img">
-                <img src="./img-folder/header-icon-folder/linkedin logo_icon.png" alt="" title="LinkedIn Image" >
-
-                <!-- menu section for button after a search and icon bar in navigation header -->
-                <div class="left-header-search"> 
-                       <input type="text"  title="search bar" placeholder="Search" class="search-bar">
+    <header class="main-header-top">
+        <div class="header">
+            <div class="left">
+                <div class="logo">
+                    <i class="fa-brands fa-linkedin"></i>
                 </div>
-            </div>         
-
-            <!-- button navigation start from home after search box menu -->
-            <nav class="nav-md-right-side">
-                <ul class="section-devision">
-
-                    <!-- Home Page Icon Details -->
-                    <li class="nav-home"> 
-                        <div class="nav-home-center-icon">
-                            <a href="#" class="home-link">
-                                <div><img src="./img-folder/header-icon-folder/home.png" alt="" title="Home Screen" height="30px">
-                                </div> 
-                            </div>
-                                <span class="home-span-header"><b>Home</b></span>
-                            </a>
-                    </li>
-                   
-                    <!-- My Network Connection Details -->
-                    <li class="nav-my-network">
-                        <div class="nav-my-netwrok-center-icon">
-                            <a href="#" class="mynetwork-link">
-                                <div>
-                                    <img src="./img-folder/header-icon-folder/network_users_icon-1.png" alt="" title="My Network Icon" height="60px">
-                                </div>  
-                        </div>
-                                <span class="mynetwork-span-header"><b>My Network</b></span>
-                            </a>
-                    </li>      
-
-                    <!-- Job Search Icon Details -->    
-                    <li class="nav-job"> 
-                        <div class="nav-job-center-icon">
-                            <a href="#">
-                                <div><img src="./img-folder/header-icon-folder/job-search_icon.png" alt="" title="My Job Icon" height="60px">
-                                </div>
-                        </div>
-                                <span><b>Jobs</b></span>
-                            </a>
-                    </li>
-
-                    <!-- Message Chat Details -->
-                    <li class="nav-mesg">  
-                        <div class="nav-mesg-center-icon">
-                            <a href="#">
-                                <div>
-                                    <div><img src="./img-folder/header-icon-folder/number-3-icon.png" alt="" class="no-message-up"></div>
-                                    <img src="./img-folder/header-icon-folder/message_icon.png" alt="" title="Message Icon" height="35px">
-                                </div>
-                        </div>
-                                <span><b>Messaging</b></span>
-                            </a>
-                    </li>
-                    <!--  Notification Message PopUp Details -->
-                    <li class="nav-natify">  
-                        <div class="nav-natify-center-icon">
-                            <a href="#">
-                                <div><div><img src="./img-folder/header-icon-folder/number-3-icon.png" alt="" class="no-notify-up">
-                                    </div>
-                                    <img src="./img-folder/header-icon-folder/notification_icon.png" alt="" title="Notification Icon" height="40px">
-                                </div>
-                        </div>
-                                <span><b>Notification</b></span>
-                            </a>
-                    </li>
-                    <!-- My selection Login Details -->
-                    <li class="nav-me-selection">   
-                        <div class="nav-login-selection-center-icon">
-                            <a href="#">
-                                <div><img src="./img-folder/header-icon-folder/account_person_icon.png" alt="" title="Me selection login" height="35px">
-                                </div>
-                        </div>
-                                <span><b>Me</b></span>
-                            </a>
-                    </li>
-                </ul>
-                
-                <!-- header section of premium and free option menu -->
-                <div class="nav-try-prim">
-                    <a href="#">Try Premium free for 1 month</a>
+                <div class="input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="inside-search-bar" placeholder="Search">
                 </div>
-            </nav>
+            </div>
+            <div class="right">
+                    <div class="home">
+                        <a href="#" class="home-right-link">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <h6 class="right-home">Home</h6>
+                        </a>
+                    </div>
+                <div class="my-network">
+                    <a href="#" class="mynetwork-right-link">
+                        <i class="fa-solid fa-user-group fa-flip-horizontal"></i>
+                        <h6 class="right-my-network">My Network</h6>
+                    </a>
+                </div>
+                <div class="jobs">
+                    <a href="#" class="jobs-right-link">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <h6 class="right-job-handler">Jobs</h6>
+                    </a>
+                </div>
+                <div class="message">
+                    <a href="#" class="message-right-link">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <h6 class="right-message">Messaging</h6>
+                    </a>
+                </div>
+                <div class="notification">
+                    <a href="#" class="notify-right-link">
+                        <i class="fa-solid fa-bell" ></i>
+                        <h6 class="right-notification">Notifications</h6>
+                    </a>
+                </div>
+                <div class="me">
+                    <a href="#" class="me-right-link">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h6 class="right-me-login">Me</h6>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </div>
+                <a href="#"><h6>Try premium Free For 1 Month</h6></a>
+            </div>
         </div>
     </header>
 </body>

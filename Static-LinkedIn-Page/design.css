@@ -1,139 +1,80 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap'); --italic style*/
+
+
+*{
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
 }
-.header-menu-bar{
-    background-color:rgb(209, 65, 65);
-    color: white;
-    padding: 10px;
-    display: absolute;
-    margin: 0 , 180px;
-    height: 10%;
+body{
+    background-color: rgb(233,230,225);
+}
+.main-header-top .header{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    gap: 1rem;
+    padding:0 6rem;
+    background-color: white;
+
+}
+.header .left , .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.main-header-top .header .left{
+    padding-left: 3rem;
+    display: flex;
+    gap: 0.6rem;
+}
+.header .logo{
+    font-size: 2.5rem;
+    color: blue;   
+}
+.header .left .input{
+    background-color: rgb(237,243,248);
     width: 100%;
-    top: 0;
-}
-.header-main {
-    background-color: rgb(255,255,255);
-    color: white;
-    padding: 10px;
     display: flex;
-    margin: 0  50px  0 50px;
-    height: 10%;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    position: fixed;
-    width: 90%;
-    top: 0;
-    z-index: 1000; /* Adjust the z-index as needed to ensure it appears above other content */
+    align-items: cen;
+    padding:0.5rem 12px;
+    gap: 0.5rem;
 }
-.nav-img {
-    display: flex;
-    align-items: left;
-}
+.header .left .inside-search-bar{
+    border: none;
+    background: transparent;
+    width: 240px;
 
-/* serach box and its boader with img inside search box */
-.left-header-search {
-    display: flex
 }
-.search-bar{
-    display: flex;
-    height: 25px;
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 12px;
-    background-color:  rgb(220,230,240);
-    border-style: hidden;
+.header .left .inside-search-bar::placeholder{
+    font-size: 0.8rem;
+    color: rgb(95,97,99);
 }
-
-/* navigation section of header details  */
-.nav-md-right-side {
-    display: flex;
-    align-items: center;
-    text-align: center;
+.header .left .input i{
+    /* color: red; */
+    font-size: 0.8rem;
+    color: rgb(59,61,62);
+    padding-top: 4px;
 }
-.section-devision {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    margin-right: 100px;
-    justify-content: space-between;
-}
-.section-devision li{
-    font-size: 15px;
-    margin-right: 20px; 
+.header .right .home .home-right-link ,  .my-network .mynetwork-right-link ,  .jobs .jobs-right-link ,
+  .message .message-right-link , .notification .notify-right-link , .me .me-right-link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
+    justify-content: center;
+    gap: 0.2rem;
 }
-
-/* removing underline and its color for highperlink */
-.section-devision a {
-    text-decoration: none;
-    color: #333; 
-    display: flex;
-    flex-direction: column;
-    padding-right: 5px;
+.header .right .home .home-right-link i , .mynetwork-right-link i , .jobs-right-link i , .message-right-link i ,
+.notify-right-link i , .me-right-link i{
+    font-size: 1.2rem;
+    color: grey;
 }
-/* icon button and its below name adjustment in this */
-.no-notify-up{
-    top: 0;
-    width: 15px;
-    height: 18px;
-    text-align: right;
-    position: absolute;
-    align-items: right;
-    padding: 20px;
-    right: 427px;
-    padding-block: 18px;
-} 
-.no-message-up{
-    top: 0;
-    width: 15px;
-    height: 18px;
-    text-align: right;
-    position: absolute;
-    align-items: right;
-    padding: 20px;
-    right: 518px;
-    padding-block: 18px;
-} 
-.nav-home-center-icon{
-    padding-top: 45px;
-    margin: -45px;
-}
-.nav-my-netwrok-center-icon{
-    padding-top: 45px;
-    margin: -59px;
-}
-.nav-job-center-icon{
-    padding-top: 45px;
-    margin: -58px;
-}
-.nav-mesg-center-icon{
-    padding-top: 45px;
-    margin: -45px;
-}
-.nav-natify-center-icon{
-    padding-top: 45px;
-    margin: -48px;
-}
-.nav-login-selection-center-icon{
-    padding-top: 45px;
-    margin: -45px;
-}
-
-.section-devision span {
-    margin-top: 42px; 
-}
-.nav-try-prim {
-    display: flex;
-    align-items: right;
-    margin-right: 50px; /* Adjust the margin as needed */
-    border-left: 100px;
+.home-right-link , .mynetwork-right-link  , .jobs-right-link  , .message-right-link  ,
+.notify-right-link  , .me-right-link {
+    color: grey;
 }
