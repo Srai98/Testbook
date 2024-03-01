@@ -18,7 +18,8 @@ body{
     background-color: rgb(233,230,225);
 }
 
-/* difining header section for all the changes that going to be happening inside a contain's of below in header section's  */
+/* difining header section for 
+all the changes that going to be happening inside a contain's of below in header section's  */
 .main-header-top .header{
     display: flex;
     justify-content: space-between;
@@ -96,8 +97,9 @@ a{
 }
 
 /* below text color changing on hover mouse at icon or text that is given  */
-.header .right .home .home-right-link:hover , .header .right .my-network .mynetwork-right-link:hover , .header .right .jobs .jobs-right-link:hover ,
-.header .right .message .message-right-link:hover , .header .right .notification .notify-right-link:hover ,
+.header .right .home .home-right-link:hover , .header .right .my-network .mynetwork-right-link:hover ,
+.header .right .jobs .jobs-right-link:hover ,.header .right .message .message-right-link:hover ,
+ .header .right .notification .notify-right-link:hover ,
 .header .right .me-right-link .right-me-arrow-login:hover  {
     color: black;
  }
@@ -148,34 +150,128 @@ a{
 /*-------------------------------------Closing Of Header Section ------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------*/
 
-/* container changes for main */
+/* container changes for main --> defining in 3 section for main container */
 .container{
     display: grid;
     grid-template-columns: 20% 60% 20%;
     gap: 2rem;
     width: 80%;
-    margin: 1rem auto;
+    margin: 2rem auto;
 }
+
+/* side bar difining here properly with its padding and gap */
 aside .sidebar{
     background: rgb(255, 254, 254);
     height: 90vh;
     width: 100%;
     border-radius: 0.8rem;
 }
-.sidebar .top{
+
+/* side bar top left side color and it is defined as per my or refrence uses  */
+ .sidebar .top{
     width: 16%;
     height: 11vh;
     background-color: grey;
     position: absolute;
-    /* border-radius: 0.9rem; */
+    border-radius: 0.4rem;
 }
+
+/* img changes using as circle with proper padding */
 .sidebar img{
     position: relative;
     left:50%;
-    top: 3%;
+    top: 2rem;
     border-radius: 50%;
-    width: 4rem;
-    height: 3rem;
+    width: 6rem;
+    height: 5.5rem;
     transform: translate(-50%);
     border: 2px solid white;
 }
+
+/* padding and space given right after img for name and designation text */
+aside .sidebar .profile-name{
+    position: relative;
+    text-align: center;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: o.9rem;
+    border-bottom: 2px solid rgb(189, 184, 184);
+}
+
+/* profile name given right after img */
+.sidebar .profile-name a{
+    text-decoration: none;
+    color: black;
+}
+
+/*text giveing a underline over hover */
+.sidebar .profile-name a:hover{
+    text-decoration: underline;
+}
+
+/* designation container tag below User Name */
+.sidebar .profile-name small{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+/* text for who view and its count for container and padding  */
+.sidebar .view{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin-top: 2rem;
+    top: 0.5rem;
+}
+
+/* inside of container for count and text part   */
+.sidebar .view .views{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0;
+    cursor: pointer;
+}
+
+/* color changing over a mouse curser */
+.sidebar .view .views:hover{
+    background-color: rgb(230, 226, 226);
+}
+
+/* text size changing for better view */
+.sidebar .view .views h6{
+    color: grey;
+}
+.sidebar .view .views a{
+    color: blue;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+/*----------------------------- Closing Of Left Container Section Changes ------------------------------------*/
+.main-section{
+    background: rgb(255, 254, 254);
+    height: 90vh;
+    width: 100%;
+    border-radius: 0.8rem;   
+}
+
+/*----------------- Closing Of Main Center Container Section Details ------------------------------*/
+
+.right-side{
+    background-color: white;
+    height: 90vh;
+    width: 100%;
+    border-radius: 0.8rem;   
+}
+
+/*------------------- Closing Of Right Container Section ------------------------------------------*/
