@@ -308,20 +308,23 @@ aside .recent_jobs{
     background: #fff;
     margin-top: 0.5rem;
     width: 100%;
-    height: 65vh;
+    height: 68vh;
     position: relative;
     border-radius: 0.8rem;
     overflow: hidden;
 }
 
+/* recent container margin defining  */
 aside .recent_jobs .recent{
     margin: 1rem;
 }
 
+/* defining h tag font weight */
 aside .recent_jobs .recent h6{
     font-weight: 100;
 }
 
+/* container where text and icon are present defining */
 aside .recent_jobs .recent .one{
     display: flex;
     align-items: center;
@@ -330,19 +333,23 @@ aside .recent_jobs .recent .one{
     color: rgb(83, 83, 83);
 }
 
+/* icon size defining of recent container */
 aside .recent_jobs .recent .one i{
     font-size: 0.8rem;
 }
 
+/* group comntainer margin defined */
 aside .recent_jobs .groups{
     margin: 2rem 0 0 1rem;
 }
 
+/* group container - t5 tag defined font and color  */
 aside .recent_jobs .groups h5{
     color: #0a66c2;
     font-size: 0.7rem;
 }
 
+/* defined icon and text of group container */
 aside .recent_jobs .groups .two{
     display: flex;
     align-items: center;
@@ -351,6 +358,7 @@ aside .recent_jobs .groups .two{
     color: rgb(83, 83, 83);
 }
 
+/* show more section defined */
 .groups .show{
     display: flex;
     margin-top: 1rem;
@@ -358,56 +366,195 @@ aside .recent_jobs .groups .two{
     color: gray;
 }
 
+/* event container defined */
 aside .events{
     display: flex;
     justify-content: space-between;
     margin: 2rem 1rem 0 1rem;
 }
 
+/* event container defined mouse  */
 aside .events h6:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 
+/* event icon color defined  */
 aside .events i{
+    /* color: red; */
     color: gray;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
+/* discover container defined */
 .discover{
     text-align: center;
     margin: 2rem 0 0 0;
     border-top: 1px solid rgb(144, 144, 144);
     padding-top: 1rem;
 }
-
+ /* discover container highperlink defined  */
 .discover a{
     text-decoration: none;
     color: gray;
 }
 
-
-
-
-
-
-
-
 /*----------------------------- Closing Of Left Container Section Changes ------------------------------------*/
-.main-section{
-    background: rgb(255, 254, 254);
-    height: 90vh;
+
+/* main container changes font and imgs */
+main{
+    background: #fff;
+    border-radius: 0.8rem;
+    height: 60vh;
+    position: relative;
+}
+
+/* defined media section */
+main .media{
+    background: #fff;
+    height: 20vh;
+    margin-top: 1rem;
+    border-radius: 0.8rem;
+}
+
+/* img icon defined its size */
+main .media .search img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* search section defining right after img  */
+main .media .search{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* input search format defining   */
+main .media .search input{
+    border-radius: 5rem;
+    border: 1px solid gray;
     width: 100%;
-    border-radius: 0.8rem;   
+    padding: 0 1.2rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+/* input search of highlight times */
+main .media .search input:hover{
+    background: rgb(233, 233, 233);
+}
+
+/* posts section defined */
+main .media .posts{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+/* defining inside post section format of icon and text */
+main .media .posts .post-photo , main .media .posts .post-video , 
+main .media .posts .post-job , main .media .posts .post-write{
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem 0.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* defined text h tag  */
+main .media .posts .post-photo h5 , main .media .posts .post-video h5 ,
+main .media .posts .post-job h5 , main .media .posts .post-write h5{
+    font-weight: 400;
+}
+
+/* defined icon color */
+main .media .posts .post-photo i{
+    color: rgb(10, 102, 194);
+}
+/* defined icon color */
+main .media .posts .post-video i{
+    color: rgb(25,194,10);
+}
+/* defined icon color */
+main .media .posts .post-job i{
+    color: rgb(49,135,221);
+}
+/* defined icon color */
+main .media .posts .post-write i{
+    color: rgb(194,10,185);
+}
+/* defined icon color */
+main .media .posts .post:hover{
+    background: rgb(235, 235, 235);
+    border-radius: 0.2rem;
 }
 
 /*----------------- Closing Of Main Center Container Section Details ------------------------------*/
 
-.right-side{
-    background-color: white;
-    height: 90vh;
-    width: 100%;
-    border-radius: 0.8rem;   
+/* defined right side conatiner  */
+.right_side{
+    background: #fff;
+    border-radius: 0.8rem;
+    height: 62vh;
 }
+
+
+.right_side .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.right_side .news h4{
+    font-weight: 400;
+}
+
+.right_side .latest_news{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.right_side .latest_news:hover{
+    background: rgb(231, 231, 231);
+}
+
+.right_side .latest_news .one{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.right_side .latest_news .one h5{
+    font-weight: 500;
+}
+
+.right_side .latest_news .one i{
+    font-size: 0.5rem;
+    color: gray;
+}
+
+.right_side .latest_news .two{
+    margin: 0 1.9rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.right_side .show_more{
+    display: flex;
+    gap: 0.5rem;
+    color: gray;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.right_side .show_more h5{
+    font-weight: 400;
+} 
 
 /*------------------- Closing Of Right Container Section ------------------------------------------*/
